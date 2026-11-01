@@ -1,0 +1,3 @@
+Dataset,Accuracy,Precision,Recall,F1-score
+Red Wine,0.9031,0.6538,0.7234,0.6869
+White Wine,0.8765,0.7227,0.7577,0.7398
