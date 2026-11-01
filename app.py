@@ -56,9 +56,14 @@ def load_models():
 
 @st.cache_resource
 def get_mongo_client():
+    try:
+        mongo_uri = st.secrets["MONGO_URI"]
+    except (KeyError, FileNotFoundError):
+        mongo_uri = "mongodb://127.0.0.1:27017/"
+
     client = MongoClient(
-        "mongodb://127.0.0.1:27017/",
-        serverSelectionTimeoutMS=3000,
+        mongo_uri,
+        serverSelectionTimeoutMS=5000,
     )
     client.admin.command("ping")
     return client
