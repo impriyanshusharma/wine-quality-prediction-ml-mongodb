@@ -6,6 +6,8 @@ A machine learning application that predicts wine quality using physicochemical 
 
 This project uses the physicochemical characteristics of red and white wine to estimate quality scores and classify wines into two categories. It demonstrates a complete workflow involving data preparation, model training, evaluation, database integration, and interactive prediction.
 
+Check the project :- https://wine-quality-prediction-ml-app-nosmxmrf33imdz9mesnupy.streamlit.app/
+
 ### Key Features
 
 - **Machine Learning:** Random Forest regression and classification models for red and white wine.
